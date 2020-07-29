@@ -143,12 +143,22 @@ header img {
     }
 }
 
-/*
-@media (min-width: 1024px) and (max-width: 650px) {
+@media (min-width: 1024px) and (max-height: 650px) {
     header div.welcome {
-        font-size: 2em;;
+        top: 40px;
+        font-size: 2.5em;
+    }
+    
+    header h1 {
+        padding-bottom: 7vh;
+    }
+    
+    header button {
+        margin-top: 12vh;
+        font-size: 0.7em;
+    }
+        
 }
-*/
 
 @media (min-width: 1366px) {
     header div.welcome {
@@ -162,6 +172,56 @@ header img {
         top: auto;
         bottom: 90px;
         font-size: 4em;
+    }
+}
+
+
+/*SEKCJA FEATURES*/
+
+.features {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.features h1 {
+    font-size: 2em;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.feature {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.feature p {
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .features-flex {
+        display: flex;
+    }
+    
+    .feature {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature {
+        padding: 0 20px;
     }
 }
 
