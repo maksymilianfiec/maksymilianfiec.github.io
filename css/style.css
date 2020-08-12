@@ -413,10 +413,6 @@ header img {
 
 
 /*SEKCJA HOBBY*/
-.hobby {
-    margin-bottom: 20px;
-}
-
 .hobby__title {
     font-size: 2em;
     padding: 25px 20px;
@@ -511,7 +507,7 @@ header img {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
     .hobby__item {
         height: 400px;
     }
@@ -523,8 +519,169 @@ header img {
 }
 
 
-/*SEKCJA FOOTER*/
+/*SEKCJA CONTACT*/
+.contact {
+    background-color: black;
+    color: white;
+}
 
-footer {
-    height: 50vh;
+.contact__title {
+    font-size: 2em;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact__container {
+    padding: 0 20px 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__input--special {
+    min-height: 100px;
+}
+
+.form__button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact__icon-container {
+    position: relative;
+    margin: 20px;
+}
+
+.contact__icon {
+    padding: 15px 20px;
+    margin-left: 40px;
+    font-size: 1.2em;
+}
+
+.contact__icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.contact__icon:nth-child(1)::before {
+    left: 15px;
+    top: 7px;
+    background-image: url(../img/contact1.png);
+}
+
+.contact__icon:nth-child(2)::before {
+    left: 15px;
+    top: 52px;
+    background-image: url(../img/contact2.png);
+}
+
+.contact__icon:nth-child(3)::before {
+    left: 15px;
+    top: 96px;
+    background-image: url(../img/contact3.png);
+}
+
+.contact__icon:nth-child(4)::before {
+    left: 15px;
+    top: 141px;
+    background-image: url(../img/contact5.png);
+}
+
+@media (min-width: 768px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        max-width: 1200px;
+        padding: 0 80px 40px;
+        margin: 0 auto;
+    }
+
+    .contact__icon-container {
+        margin-top: 0;
+    }
+
+    .contact__title {
+        font-size: 2.5em;
+    }
+
+    .contact__icon {
+        padding-bottom: 20px;
+        font-size: 1.6em;
+    }
+
+    .contact__icon:nth-child(1)::before {
+        top: 12px;
+    }
+
+    .contact__icon:nth-child(2)::before {
+        top: 63px;
+    }
+
+    .contact__icon:nth-child(3)::before {
+        top: 118px;
+    }
+
+    .contact__icon:nth-child(4)::before {
+        top: 172px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact__container {
+        grid-column-gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact__title {
+        padding: 40px 20px;
+        font-size: 3em;
+    }
+
+    .contact__icon {
+        font-size: 1.8em;
+    }
+
+    .contact__icon:nth-child(1)::before {
+        top: 12px;
+    }
+
+    .contact__icon:nth-child(2)::before {
+        top: 67px;
+    }
+
+    .contact__icon:nth-child(3)::before {
+        top: 126px;
+    }
+
+    .contact__icon:nth-child(4)::before {
+        top: 183px;
+    }
+}
+
+/*SEKCJA FOOTER*/
+.footer {
+    background-color: royalblue;
+    font-size: 1.4em;
+    line-height: 3em;
+    text-align: center;
+}
+
+@media (min-width:1024px) {
+    .footer {
+        font-size: 1.6em;
+    }
 }
