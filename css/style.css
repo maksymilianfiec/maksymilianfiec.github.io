@@ -412,8 +412,119 @@ header img {
 }
 
 
+/*SEKCJA HOBBY*/
+.hobby {
+    margin-bottom: 20px;
+}
+
+.hobby__title {
+    font-size: 2em;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hobby__item {
+    height: 200px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby__item:nth-of-type(1) {
+    background-image: url(../img/hobby1.jpg);
+}
+
+.hobby__item:nth-of-type(2) {
+    background-image: url(../img/hobby2.jpg);
+}
+
+.hobby__item:nth-of-type(3) {
+    background-image: url(../img/hobby3.jpg);
+}
+
+.hobby__item:nth-of-type(4) {
+    background-image: url(../img/hobby4.jpg);
+}
+
+
+.hobby__text {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hobby__title {
+        padding: 35px 20px;
+        font-size: 2.5em;
+    }
+
+    .hobby__text {
+        padding: 15px 20px;
+        font-size: 2em;
+    }
+
+    .hobby__item {
+        height: 280px;
+    }
+}
+
+@media (min-width: 960px) {
+    .hobby__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby__title {
+        padding: 40px 20px;
+        font-size: 3em;
+    }
+
+    .hobby__item {
+        height: 320px;
+        background-size: 100%;
+        transition: background-size 1s ease-in;
+    }
+
+    .hobby__text {
+        font-size: 2.2em;
+        line-height: 320px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .hobby__text:hover {
+        opacity: 1;
+
+    }
+
+    .hobby__item:hover {
+        background-size: 130%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby__item {
+        height: 400px;
+    }
+
+    .hobby__text {
+        font-size: 3em;
+        line-height: 400px;
+    }
+}
+
+
 /*SEKCJA FOOTER*/
 
 footer {
-    height: 100vh;
+    height: 50vh;
 }
