@@ -276,16 +276,17 @@ header img {
     margin: 0 auto 30px;
 }
 
-.portfolio__picture {
-    width: 100%;
-}
-
 .portfolio__item:nth-child(odd) {
     background-color: royalblue;
 }
 
 .portfolio__item:nth-child(even) {
     background-color: coral;
+}
+
+.portfolio__item-title a {
+    color: white;
+    text-decoration: none;
 }
 
 .portfolio__item:nth-child(odd) .portfolio__item-title,
